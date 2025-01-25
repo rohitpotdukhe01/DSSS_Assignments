@@ -22,7 +22,7 @@ async def process(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 def main() -> None:
     print("Hello")    
-    API_TOKEN = "7811652764:AAHsGZovSBazla9io-cIqZd1kgGygabclb4"
+    API_TOKEN = "Enter your API token here"
 
     application = ApplicationBuilder().token(API_TOKEN).build()
 
