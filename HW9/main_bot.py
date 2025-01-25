@@ -11,6 +11,8 @@ async def process(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_message = update.message.text
     print(f"Received message: {user_message}")
 
+    await context.bot.send_message(chat_id=update.effective_chat.id, text=f"I am processing your message : {user_message}")
+
     llm_response = generate_response(user_message)
     assistant_tag = "<|assistant|>"
     if assistant_tag in llm_response:
@@ -20,7 +22,7 @@ async def process(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 def main() -> None:
     print("Hello")    
-    API_TOKEN = "Enter your own API token here"
+    API_TOKEN = "7811652764:AAHsGZovSBazla9io-cIqZd1kgGygabclb4"
 
     application = ApplicationBuilder().token(API_TOKEN).build()
 
