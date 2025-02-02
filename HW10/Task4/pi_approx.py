@@ -1,3 +1,7 @@
+import numpy as np
+from numba import njit
+
+@njit  # JIT compilation for speed
 def approximate_pi(n):
     """
     Approximates Pi using a continued fraction formula.

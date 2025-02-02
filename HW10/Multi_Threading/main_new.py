@@ -1,6 +1,6 @@
-from HW10.Multi_Threading.multiThread import calculate_parallel  # Import multiprocessing function
+from multiThread_new import calculate_parallel
 import time
-from HW10.Multi_Threading.pi_approx import approximate_pi  # Import function from pi_calculator.py
+from pi_approx_new import approximate_pi  # Import function from pi_calculator.py
 
 def main():
     """
@@ -26,5 +26,8 @@ def main():
         print(f"Approximation for {n}: {pi_value}")
     print(f"Total Time Taken (Parallel): {parallel_time:.2f} seconds")
 
+    print(f"Percentage Improvement: {100 * (sequential_time - parallel_time) / sequential_time:.2f}%")
+
 if __name__ == "__main__":
+    print("Running main")
     main()

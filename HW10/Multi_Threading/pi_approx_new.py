@@ -1,7 +1,3 @@
-import numpy as np
-from numba import njit
-
-@njit
 def approximate_pi(n):
     pi_2 = 1
     nom, den = 2.0, 1.0
@@ -12,6 +8,3 @@ def approximate_pi(n):
         else:
             den += 2
     return 2 * pi_2
-
-
-

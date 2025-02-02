@@ -1,5 +1,5 @@
 import multiprocessing
-from HW10.Multi_Threading.pi_approx import approximate_pi  # Import function from pi_calculator.py
+from pi_approx_new import approximate_pi  # Import function from pi_calculator.py
 
 def calculate_parallel(nums):
     """
